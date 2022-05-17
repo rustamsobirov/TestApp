@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#320CDD</color>
+    <color name="colorPrimary">#122751</color>
+    <color name="colorPrimaryDark">#263859</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textColor">#FF000000</color>
+    <color name="grey">#AE5E5858</color>
+    <color name="lightGrey">#CFCFCF</color>
+    <color name="red">#E91E1E</color>
+    <color name="green">#3ACD3F</color>=
+
+    <!--Drawable-->
+    <color name="iconFillColor">#00000000</color>
+    <color name="iconStrokeColor">#3F3F46</color>
+    <color name="icon2FillColor">#555555</color>
+</resources>
