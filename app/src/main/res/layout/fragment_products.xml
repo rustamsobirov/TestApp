@@ -10,7 +10,10 @@
        android:id="@+id/product_rv"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       app:spanCount="2"
+       tools:listitem="@layout/product_item"
+       android:layout_marginHorizontal="4dp"
+       app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
        />
 
 </LinearLayout>

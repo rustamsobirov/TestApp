@@ -1,5 +1,6 @@
 package me.ruyeo.testapp.adapter
 
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -22,6 +23,7 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.VH>() {
                 price.text = product.price.toString()
                 Picasso.get().load(product.photoUrl).into(image)
 
+                discount.paintFlags = Paint.STRIKE_THRU_TEXT_FLAG
                 root.setOnClickListener {
                     onClick?.invoke(product)
                 }

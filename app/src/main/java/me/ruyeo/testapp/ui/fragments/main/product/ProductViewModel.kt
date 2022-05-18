@@ -11,6 +11,7 @@ import me.ruyeo.testapp.model.Product
 import me.ruyeo.testapp.repository.MainRepository
 import me.ruyeo.testapp.utils.UiStateList
 import me.ruyeo.testapp.utils.UiStateObject
+import me.ruyeo.testapp.utils.extensions.userMessage
 import javax.inject.Inject
 
 @HiltViewModel
@@ -32,7 +33,7 @@ class ProductViewModel @Inject constructor(
                 _products.value = UiStateList.SUCCESS(response.body()!!)
             }
         }catch (e : Exception){
-
+            _products.value = UiStateList.ERROR(e.userMessage())
         }
     }
 
@@ -50,7 +51,7 @@ class ProductViewModel @Inject constructor(
                 _product.value = UiStateObject.SUCCESS(response.body()!!)
             }
         }catch (e: Exception){
-
+            _product.value = UiStateObject.ERROR(e.userMessage())
         }
     }
 }
